@@ -1,5 +1,4 @@
 package com.gym.entrenadores;
-import com.gym.entrenadores.dto.EntrenadorRequestDto;
 import com.gym.entrenadores.dto.EntrenadorResponseDto;
 import com.gym.entrenadores.model.Entrenador;
 import com.gym.entrenadores.repository.EntrenadorRepository;
@@ -12,12 +11,14 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.ActiveProfiles;
 
 import java.util.List;
 import java.util.Optional;
 
 
 @SpringBootTest
+@ActiveProfiles("test")
 public class EntrenadorServiceTest {
 
     @Autowired
